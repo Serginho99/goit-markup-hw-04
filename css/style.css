@@ -84,8 +84,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--heading-color);
-  /* padding-bottom: 32px;
-  padding-top: 32px; */
 }
 
 .header-logo-sudio {
@@ -115,9 +113,30 @@ body {
 }
 
 .header-address {
+  display: inline-flex;
   color: var(--main-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+}
+
+.header-address::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.icon-mail::before {
+  background-image: url(../img/envelope.svg);
+  height: 12px;
+  width: 16px;
+}
+
+.icon-tel::before {
+  background-image: url(../img/smartphone.svg);
+  width: 10px;
+  height: 16px;
 }
 
 .header-address:hover,
@@ -128,10 +147,19 @@ body {
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/img.hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
 }
 
 .hero-title {
@@ -200,6 +228,33 @@ body {
 
 .about-item .about-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.about-list::before {
+  content: '';
+  display: block;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
 }
 
 .about-text {
