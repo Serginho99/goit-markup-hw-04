@@ -432,12 +432,14 @@ body {
 .footer {
   background-color: #2f303a;
   padding-bottom: 60px;
+  padding-top: 60px;
   display: flex;
-  height: 252px;
+  /* height: 252px; */
 }
 
 .footer-nav {
   display: flex;
+  margin: 0;
 }
 
 .address {
@@ -449,10 +451,6 @@ body {
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.address-nav {
-  margin-top: 60px;
 }
 
 .addres-item {
@@ -506,7 +504,6 @@ body {
   width: 206px;
   height: 80px;
   margin-left: 70px;
-  margin-top: 72px;
 }
 
 .footer-title-icon {
