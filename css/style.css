@@ -52,6 +52,9 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.address {
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -384,21 +387,76 @@ body {
   margin-bottom: 50px;
 }
 
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #afb1b8;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
 /* Footer */
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  display: block;
+  display: flex;
+  height: 252px;
 }
+
+.footer-nav {
+  display: flex;
+}
+
 .address {
   font-style: normal;
   width: 231px;
   height: 81px;
+  margin-right: 0;
+  display: inline-block;
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.address-item {
+  display: block;
+}
+
+.addres-item {
+  display: flex;
 }
 
 .footer-logo {
@@ -419,6 +477,11 @@ body {
   color: var(--secondary-color);
 }
 
+.address-list {
+  display: flex;
+  margin-left: 0;
+}
+
 .address-footer {
   color: var(--secondary-color);
   /* margin-bottom: 15px; */
@@ -437,6 +500,13 @@ body {
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
+}
+
+.footer-div {
+  display: block;
+  width: 206px;
+  height: 80px;
+  margin-right: 50px;
 }
 
 /* Portfolio Main */
