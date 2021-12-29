@@ -120,25 +120,6 @@ body {
   align-items: center;
 }
 
-.header-address::before {
-  content: '';
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-}
-
-.icon-mail::before {
-  background-image: url(../img/envelope.svg);
-  height: 12px;
-  width: 16px;
-}
-
-.icon-tel::before {
-  background-image: url(../img/smartphone.svg);
-  width: 10px;
-  height: 16px;
-}
-
 .header-address:hover,
 .header-address:focus {
   color: var(--accent-color);
@@ -272,7 +253,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   height: 19px;
 }
 
@@ -317,7 +298,7 @@ body {
 
 .team-item {
   background-color: var(--secondary-color);
-  height: 368px;
+  height: 428px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -338,6 +319,69 @@ body {
   margin-bottom: 10px;
   height: 19px;
   width: 270px;
+}
+
+.masters-social-item {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-list + .masters-social-list {
+  margin-left: 10px;
+}
+
+.masters-social-icon {
+  fill: currentColor;
+}
+
+/* .masters-social-icon:hover,
+.masters-social-icon:focus {
+  fill: var(--secondary-color);
+} */
+
+.masters-social-div {
+  width: 206px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.masters-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--secondary-color);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* .masters-social-link:hover .masters-social-icon,
+.masters-social-link:focus .masters-social-icon {
+  fill: var(--secondary-color);
+} */
+
+/* Clients */
+
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* Footer */
