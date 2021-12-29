@@ -53,6 +53,8 @@ body {
 }
 
 .address {
+  margin-top: 40px;
+  display: block;
 }
 
 .main-nav {
@@ -429,7 +431,6 @@ body {
 /* Footer */
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
   height: 252px;
@@ -443,16 +444,15 @@ body {
   font-style: normal;
   width: 231px;
   height: 81px;
-  margin-right: 0;
-  display: inline-block;
+  margin-top: 0;
 }
 
 .address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-item {
-  display: block;
+.address-nav {
+  margin-top: 60px;
 }
 
 .addres-item {
@@ -478,7 +478,7 @@ body {
 }
 
 .address-list {
-  display: flex;
+  display: block;
   margin-left: 0;
 }
 
@@ -503,10 +503,52 @@ body {
 }
 
 .footer-div {
-  display: block;
   width: 206px;
   height: 80px;
-  margin-right: 50px;
+  margin-left: 70px;
+  margin-top: 72px;
+}
+
+.footer-title-icon {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.footer-icon-div {
+  display: flex;
+  width: 206px;
+  height: 44px;
+}
+
+.footer-link-icon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-list-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-item-icon + .footer-item-icon {
+  margin-left: 10px;
+}
+
+.footer-icon {
+  fill: var(--secondary-color);
 }
 
 /* Portfolio Main */
