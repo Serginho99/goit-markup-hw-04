@@ -135,8 +135,8 @@ body {
 }
 
 .header-address-icon {
-  background-color: #757575;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
