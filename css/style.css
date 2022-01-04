@@ -340,6 +340,11 @@ body {
   justify-content: center;
 }
 
+.masters-social-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .masters-social-list + .masters-social-list {
   margin-left: 10px;
 }
@@ -574,6 +579,7 @@ body {
 
 .main-item {
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .main-button:hover,
@@ -657,6 +663,7 @@ body {
   width: 370px;
   height: 404px;
   border-radius: 0 0 4px 4px;
+  cursor: pointer;
 }
 
 .examples-item:hover,
